@@ -15,7 +15,6 @@ class RecordDailyPage extends StatelessWidget {
         TotalAccount(),
         UnderLineWidget(),
         Expanded(child: RecordDetail())
-
       ],
     );
   }
