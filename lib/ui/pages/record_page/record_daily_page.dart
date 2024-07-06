@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:project_account/ui/pages/record_page/components/record_detail.dart';
 
 import '../../_common/under_line_widget.dart';
 import 'components/total_account.dart';
@@ -11,7 +13,9 @@ class RecordDailyPage extends StatelessWidget {
     return Column(
       children: [
         TotalAccount(),
-        UnderLineWidget()
+        UnderLineWidget(),
+        Expanded(child: RecordDetail())
+
       ],
     );
   }
