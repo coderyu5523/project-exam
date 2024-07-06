@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_account/ui/_common/under_line_widget.dart';
 import 'package:project_account/ui/pages/record_page/components/record_list.dart';
+import 'package:project_account/ui/pages/record_page/record_write_page.dart';
 import '../../../../data/record/dummy.dart';
 
 class RecordDetail extends StatelessWidget {
@@ -11,7 +12,10 @@ class RecordDetail extends StatelessWidget {
     return Scaffold(
       // 원형 버튼
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context,MaterialPageRoute(builder: (context) => RecordWritePage()),
+          );
+        },
         child: Icon(Icons.add,color: Colors.white,),
         backgroundColor: Color(0xFFFF6254),
         shape: CircleBorder(),
