@@ -9,10 +9,11 @@ class RecordDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // 원형 버튼
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
-        backgroundColor: Colors.pink,
+        child: Icon(Icons.add,color: Colors.white,),
+        backgroundColor: Color(0xFFFF6254),
         shape: CircleBorder(),
       ),
       body: NestedScrollView(
