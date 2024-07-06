@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class RecordChartPage extends StatelessWidget {
-  const RecordChartPage({super.key});
+class RecordCalenderPage extends StatelessWidget {
+  const RecordCalenderPage({super.key});
 
   @override
   Widget build(BuildContext context) {

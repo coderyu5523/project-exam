@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_account/ui/pages/record_page/record_chart_page.dart';
+import 'package:project_account/ui/pages/record_page/record_calender_page.dart';
 import 'package:project_account/ui/pages/record_page/record_daily_page.dart';
 import 'package:project_account/ui/pages/record_page/record_memo_page.dart';
 
@@ -18,7 +18,7 @@ class RecordPage extends StatelessWidget {
           TabBar(
             tabs: const [
               Tab(text: "일일"),
-              Tab(text: "통계"),
+              Tab(text: "달력"),
               Tab(text: "메모")
             ],
           ),
@@ -26,7 +26,7 @@ class RecordPage extends StatelessWidget {
             child: TabBarView(
               children: [
                 RecordDailyPage(),
-                RecordChartPage(),
+                RecordCalenderPage(),
                 RecordMemoPage(),
               ],
             ),
