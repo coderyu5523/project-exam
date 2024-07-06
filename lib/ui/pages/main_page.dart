@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project_account/ui/pages/record_page/record_page.dart';
 import '../_common/custom_app_bar.dart';
@@ -28,10 +27,10 @@ class _MainPageState extends State<MainPage> {
       appBar: CustomAppBar(title: "가계부"), // CustomAppBar 사용
       body: IndexedStack(
         index: _selectedIndex,
-        children: [
+        children: const [
           RecordPage(),
           ChartPage(),
-          AssetPage()
+          AssetPage(),
         ],
       ),
       bottomNavigationBar: CustomBottomNavigationBar(
