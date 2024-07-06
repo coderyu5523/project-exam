@@ -23,21 +23,21 @@ class _CalendarWidgetState extends State<CalendarWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Container(color: Color(0xFFFC7C9A),
       padding: EdgeInsets.symmetric(vertical: 10.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-            icon: Icon(Icons.arrow_back_ios, color: Colors.black),
+            icon: Icon(Icons.arrow_back_ios, color: Colors.white),
             onPressed: _prevMonth,
           ),
           Text(
             DateFormat.yMMMM('ko_KR').format(_selectedDate),
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+            style: TextStyle(fontSize: 20, color: Colors.white),
           ),
           IconButton(
-            icon: Icon(Icons.arrow_forward_ios, color: Colors.black),
+            icon: Icon(Icons.arrow_forward_ios, color: Colors.white),
             onPressed: _nextMonth,
           ),
         ],

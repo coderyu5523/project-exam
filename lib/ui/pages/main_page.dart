@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project_account/ui/pages/record_page/record_page.dart';
 import '../_common/custom_app_bar.dart';
-import '../_common/custom_ottom_navigation_bar.dart';
+import '../_common/custom_bottom_navigation_bar.dart';
 import 'asset_page/asset_page.dart';
 import 'chart_page/chart_page.dart';
 

@@ -9,15 +9,15 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFFC7C9A),
       elevation: 0.0,
-      leading: Icon(CupertinoIcons.search, color: Colors.black),
-      title: Text(title, style: TextStyle(color: Colors.black)),
+      leading: Icon(CupertinoIcons.search, color: Colors.white),
+      title: Text(title, style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold)),
       centerTitle: true,
       actions: [
         Padding(
           padding: const EdgeInsets.only(right: 10.0),
-          child: Icon(Icons.settings, color: Colors.black),
+          child: Icon(Icons.settings, color: Colors.white),
         )
       ],
     );
