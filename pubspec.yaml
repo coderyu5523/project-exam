@@ -38,6 +38,8 @@ dependencies:
   google_fonts: ^6.1.0
   font_awesome_flutter: ^10.5.0
   intl: ^0.18.1
+  flutter_riverpod: ^2.5.1
+
   flutter_localizations:
     sdk: flutter
 
