@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_account/ui/pages/record_page/components/record_category.dart';
+import 'package:project_account/ui/pages/record_page/components/time_picker_example.dart';
+
 
 class RecordWritePage extends StatelessWidget {
   const RecordWritePage({super.key});
@@ -9,43 +12,21 @@ class RecordWritePage extends StatelessWidget {
       appBar: _buildAppBar(context),
       body: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              ElevatedButton(
-                child: Text("수입"),
-                onPressed: () {
-
-                },
-              ),
-              ElevatedButton(
-                child: Text("지출"),
-                onPressed: () {
-
-                },
-              ),
-
-
-            ],
-          )
+          RecordTypeSection(),
         ],
       ),
     );
   }
-
-
-
-
 
   AppBar _buildAppBar(BuildContext context) {
     return AppBar(
       backgroundColor: Color(0xFFFC7C9A),
       elevation: 0.0,
       leading: IconButton(
-        icon: Icon(Icons.arrow_back,color: Colors.white),
+        icon: Icon(Icons.arrow_back, color: Colors.white),
         onPressed: () => Navigator.pop(context),
       ),
-      title: Text("기록", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold)),
+      title: Text("기록", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
       centerTitle: true,
       actions: [
         Padding(
@@ -56,3 +37,5 @@ class RecordWritePage extends StatelessWidget {
     );
   }
 }
+
+
